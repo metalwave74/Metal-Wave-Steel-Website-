@@ -213,3 +213,223 @@ footer{margin-top:36px;padding:28px 0;border-top:1px solid rgba(255,255,255,.08)
     document.getElementById('y').textContent = new Date().getFullYear();
   </script></body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metal Wave - Steel Railing & Kitchens</title>
+  <style>
+    :root {
+      --primary-color: #2e8b57; /* Sea green */
+      --secondary-color: #f0f0f0; /* Light gray */
+      --text-color: #333; /* Dark gray */
+      --bg-color: #fff; /* White */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+
+    .section {
+      background-color: var(--bg-color);
+      padding: 40px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+      font-size: 2em;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: var(--primary-color);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .process-item, .material-item {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .process-item h3, .material-item h3 {
+      color: var(--primary-color);
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      background-color: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img src="logo.png" alt="MW Logo">
+    <h1>Metal Wave</h1>
+    <p>Steel Railing & Kitchen</p>
+  </header>
+
+  <div class="container">
+    
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="https://i.ibb.co/6P2T0Gj/railing.jpg" alt="Steel Railing">
+          <h3>Steel Railing</h3>
+        </div>
+        <div class="grid-item">
+          <img src="https://i.ibb.co/3s6871h/kitchen.jpg" alt="Modular Kitchen">
+          <h3>Modular Kitchens</h3>
+        </div>
+        <div class="grid-item">
+          <img src="https://i.ibb.co/G3Xm8pL/aluminium-railing.jpg" alt="Aluminium Glass Railing">
+          <h3>Aluminium Glass Railing</h3>
+        </div>
+        <div class="grid-item">
+          <img src="https://i.ibb.co/S680w8t/ss-railing.jpg" alt="SS Glass Railing">
+          <h3>SS Glass Railing</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <h2>Our Process</h2>
+      <div class="process-item">
+        <h3>1. Site Evaluation</h3>
+        <p>We perform accurate site measurements for every project to ensure perfect fitting and design.</p>
+      </div>
+      <div class="process-item">
+        <h3>2. Design Development Stage</h3>
+        <p>This stage refines architectural concepts, structural layouts, and system integration. We also incorporate client feedback and regulatory requirements to finalize the design.</p>
+      </div>
+    </section>
+
+    <section id="materials" class="section">
+      <h2>Materials and Resources</h2>
+      <div class="grid-container">
+        <div class="material-item">
+          <h3>Stainless Steel (SS 304 / SS 316)</h3>
+          <p>This material is resistant to rust, corrosion, and weather, making it ideal for staircases, balconies, and outdoor use.</p>
+        </div>
+        <div class="material-item">
+          <h3>Mild Steel (MS) with Powder Coating</h3>
+          <p>A strong, budget-friendly option with many color finishes available.</p>
+        </div>
+        <div class="material-item">
+          <h3>Glass & Steel Combinations</h3>
+          <p>Toughened glass with stainless steel frames gives a modern and elegant look.</p>
+        </div>
+        <div class="material-item">
+          <h3>Wood & Steel Hybrid</h3>
+          <p>Adds warmth and style while maintaining structural strength.</p>
+        </div>
+        <div class="material-item">
+          <h3>Countertops</h3>
+          <p>We use scratch-resistant, heatproof, and stylish Granite & Quartz countertops for daily kitchen use.</p>
+        </div>
+        <div class="material-item">
+          <h3>Hardware & Accessories</h3>
+          <p>We use quality hardware like soft-close hinges, telescopic channels, and designer handles from reputed brands.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p style="text-align: center;">For more information, please contact us:</p>
+      <div style="text-align: center;">
+        <p><strong>Phone:</strong> +91 7408971354</p>
+        <p><strong>Email:</strong> <a href="mailto:metalwavsteel@gmail.com">metalwavsteel@gmail.com</a></p>
+        <p><strong>Website:</strong> <a href="https://www.metalwavekitchens.com" target="_blank">www.metalwavekitchens.com</a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Metal Wave. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
